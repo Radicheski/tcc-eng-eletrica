@@ -1,0 +1,11 @@
+{
+    "image": "registry.gitlab.com/islandoftex/images/texlive:TL2025-2025-03-07-full",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "james-yu.latex-workshop",
+                "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+            ]
+        }
+    }
+}
