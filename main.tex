@@ -113,18 +113,32 @@
 
 % Introdução (exemplo de capítulo sem numeração, mas presente no Sumário)
 % ----------------------------------------------------------
+\begingroup
+\renewcommand{\cleardoublepage}{}
+\renewcommand{\clearpage}{\vspace{24pt}}
 \input{cap01}
 
 % PARTE DA PREPARAÇÃO DA PESQUISA
 % ----------------------------------------------------------
 %\part{Preparação da pesquisa}
-%\input{cap02}
+\input{cap02}
 %
 
 % PARTE DOS REFERENCIAIS TEÓRICOS
 % ----------------------------------------------------------
 %\part{Referenciais teóricos}
-%\input{cap03}
+\input{cap03}
+
+\input{cap04}
+
+\input{cap05}
+\input{cap06}
+\input{cap07}
+\input{cap08}
+
+\nocite{*} % Imprime todas as bibliografias sem  precisar citar
+
+\endgroup
 
 % PARTE DOS RESULTADOS
 % ----------------------------------------------------------
