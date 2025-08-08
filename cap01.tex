@@ -1,10 +1,23 @@
 \chapter{INTRODUÇÃO} \label{cha:introducao}
 
-As baterias são componentes essenciais em sistemas portáteis, veículos elétricos
-e sistemas de armazenamento de energia. A determinação da resistência interna é
-um fator crítico para avaliar o desempenho e a saúde da bateria. Este projeto tem
-como objetivo desenvolver um sistema capaz de carregar e descarregar uma bateria
-sob teste, garantindo que as correntes e tensões permaneçam dentro dos limites
-estabelecidos pelo usuário. O sistema também realizará a estimação da resistência
-interna da bateria em tempo real e transmitirá os dados via interface serial para
-análise em um computador.
+As baterias são componentes imprescindíveis nos sistemas portáteis, fornecendo
+energia para uma ampla gama de produtos, abranngendo desde os \textit{smartwatchs}
+até veículos com tração elétrica. A correta determinação da capacidade de carga
+dentro dos limites operacionais do produto, assim como da resistência interna
+para estimação da saúde da bateria, são fatores sempre presentes no ciclo de vida
+de muitos dispositivos que fazem parte do nosso dia a dia.
+
+Para realizar medições precisas e confiáveis, o presente projeto se baseia em 
+conceitos fundamentais da eletrônica de potência e conversores CC-CC, conforme
+apresentado por \textcite{rashid_power_2018} e \textcite{barbi_modelagem_2014}.
+Além disso, técnicas modernas de conversores bidirecionais para controle de carga
+e descarga, como descrito por \textcite{nene_bidirectional_2015}, \textcite{khasiev_bipolar_2020}
+e \textcite{andreycak_adjustable_1999}, serão analisadas. Métodos de medição em
+tempo real de resistência interna também são explorados por \textcite{chiang_online_2011}
+e \textcite{bao_online_2018}, fornecendo uma base sólida para a implementação do sistema proposto.
+
+O sistema desenvolvido será capaz de carregar e descarregar a bateria sob teste,
+garantindo que as correntes e tensões permaneçam dentro dos limites estabelecidos
+pelo usuário. A estimação da resistência interna será realizada em tempo real, com
+amostragem a cada poucos segundos, e os dados serão transmitidos via interface serial
+para análise em um computador.
